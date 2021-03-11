@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #bde2f5;
+    padding: 5%;
+}
+
+.content {
+    width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-gap: 20px;
+    grid-column: 1/-1;
+    justify-content: center;
+}
+
+.knopka {
+    width: 1140px;
+    display: grid;
+    justify-content: right;
+    padding: 10px; 
+    position: absolute;
+    right: 0px;
+    width: 150px;
+    height: 45px;
+    top:0px;
+}
+
+.search-conteiner {
+  width: 1140px;
+  display: grid;
+  justify-content: center;
+  padding: 10px; 
+  position: absolute;
+  right: 330px;
+  width: 700px;
+  height: 45px;
+  top:0px;
+}
+
+
+.item {
+    height: 350px;
+    background: rgb(250, 249, 249);
+}
+
+
+
+@media (max-width: 1023px){
+    body{
+        padding: 0;
+    }
+}
+
+a.button {
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    line-height: 2em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    color: rgb(0,0,0);
+    outline: none;
+    border: 1px solid rgba(0,0,0,.4);
+    border-top-color: rgba(0,0,0,.3);
+    border-radius: 20px;
+    background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+    box-shadow:
+     0 0 3px rgba(0,0,0,0) inset,
+     0 1px 1px 1px rgba(255,255,255,.2),
+     0 -1px 1px 1px rgba(0,0,0,0);
+    transition: .2s ease-in-out;
+  }
+  a.button:hover:not(:active) {
+    box-shadow:
+     0 0 3px rgba(0,0,0,0) inset,
+     0 1px 1px 1px rgba(0,255,255,.5),
+     0 -1px 1px 1px rgba(0,255,255,.5);
+  }
+  a.button:active {
+    background: linear-gradient(rgb(250,250,250), rgb(235,235,235));
+    box-shadow:
+     0 0 3px rgba(0,0,0,.5) inset,
+     0 1px 1px 1px rgba(255,255,255,.4),
+     0 -1px 1px 1px rgba(0,0,0,.1);
+  }
+
+  .images{
+    height: 190px;
+    background: rgb(250, 245, 245);
+    text-align:center;
+    padding: 10px;
+  }
+
+  .inf{
+    height: 160px;
+    background: rgb(250, 245, 245);
+  }
+
+  
+
+  .title{
+    text-align:center; 
+    padding: 3px;
+  }
+
+  .art,
+  .price,
+  .amount{
+    text-align:left; 
+    padding: 3px;
+  }
+
+  #search-form{
+    width: 400px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(12, 12, 12);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+  }
+
+  .search-conteiner button{
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+
+  input{
+    
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #070707;
+    outline: none;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+
+
+  
+  
+  
